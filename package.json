@@ -6,7 +6,7 @@
   "scripts": {
     "star": "PORT=3000 open index.html",
     "build": "PORT=5700 node backend/backend_code_api.js || PORT=process.env.PORT node backend/backend_code_api.js",
-    "dev": "PORT=5900 concurrently \"npm run start\" \"npm run build\""
+    "dev": "PORT=5900 concurrently \"npm start\" \"npm run build\""
   },
 "engines": {
   "node": ">=18 <21"
