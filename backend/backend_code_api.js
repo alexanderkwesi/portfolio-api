@@ -6,7 +6,7 @@ const path = require("path");
 
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5700;
 
 app.use(express.json());
 app.use(cors());
@@ -336,6 +336,6 @@ app.post("/tan", (req, res) => {
     //`Scientific Calculator API is running on ${port} Server running on https://alexanderkwesi.github.io/calculator_api:3000`
   //);
 //});
-app.listen(PORT, '0.0.0.0', () => {
+app.listen(PORT, '127.0.0.1', () => {
   console.log(`Server running on port ${PORT}`);
 });
