@@ -7,8 +7,7 @@
     "start": "vite preview",                                 // For Netlify or production preview
     "dev": "PORT=5900 concurrently \"npm run start-backend\" \"vite\"",// Local development: backend + Vite
     "build": "vite build",                                   // Build frontend assets
-    "start-backend": "PORT=5700 node backend/backend_code_api.js",     // Run backend server
-    "start": "PORT=3000 open index.html"                      // Unrelated (optional local opener)
+    "start-backend": "PORT=5700 node backend/backend_code_api.js",     // Run backend server                   // Unrelated (optional local opener)
   },
   "engines": {
     "node": ">=18 <21"
