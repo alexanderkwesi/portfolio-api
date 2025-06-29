@@ -337,5 +337,5 @@ app.post("/tan", (req, res) => {
   //);
 //});
 app.listen(PORT, '127.0.0.1', () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`Server running on port http://127.0.0.1:${PORT}`);
 });
