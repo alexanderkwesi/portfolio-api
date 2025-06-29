@@ -5,7 +5,7 @@
   "homepage": "index.html",
   "scripts": {
     "star": "open index.html",
-    "build": "PORT=process.env.PORT node backend/backend_code_api.js"
+    "build": "PORT=5700 node backend/backend_code_api.js || PORT=process.env.PORT node backend/backend_code_api.js"
   },
 "engines": {
   "node": ">=18 <21"
