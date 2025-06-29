@@ -733,11 +733,9 @@
                 let operator = operation;
 
                 $.ajax({
-                    url: "https://parseapi.back4app.com/functions/evaluate",
+                    url: "http://127.0.0.1:5700/evaluate",
                     type: 'POST',
                     headers: {
-                        "X-Parse-Application-Id": "mOMLrwli2RCHGrWDlcidIM1liYmN006NvBHI5e2S",
-                        "X-Parse-REST-API-Key": "N0kfePhgfbvih69W9FV9ll5C9UL9my3lOwGUFfrA",
                         "Content-Type": "application/json"
                     },
                     data: JSON.stringify({ numbers: number, operators: operator }),
