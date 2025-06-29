@@ -5,7 +5,7 @@
   "homepage": "index.html",
   "scripts": {
     "start": "vite preview",                                 
-    "dev": "PORT=5900 concurrently \"npm run start-backend\" \"vite\"",
+    "dev": "PORT=5900 concurrently \"npm run start\" \"npm run start-backend\"",
     "build": "vite build",                                  
     "start-backend": "PORT=5700 node backend/backend_code_api.js"
   },
