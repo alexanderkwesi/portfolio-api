@@ -1,0 +1,25 @@
+{
+  "name": "my-website-in-typescript-main",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "index.html",
+  "scripts": {
+    "star": "open index.html",
+    "build": "PORT=process.env.PORT node backend/backend_code_api.js"
+  },
+"engines": {
+  "node": ">=18 <21"
+},
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "mathjs": "^14.4.0",
+    "vite": "^6.2.3",
+    "open": "^10.1.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "webpack-cli": "^5.0.0"
+  }
+}
