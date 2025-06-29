@@ -1,16 +1,18 @@
 {
-  "name": "portfolio-api-main",
+  "name": "my-website-in-typescript-main",
   "version": "1.0.0",
   "description": "",
   "homepage": "index.html",
   "scripts": {
-    "start": "PORT=3000 open index.html",
-    "build": "PORT=5700 node backend/backend_code_api.js || PORT=process.env.PORT node backend/backend_code_api.js",
-    "dev": "PORT=5900 concurrently \"npm run start\" \"npm run build\""
+    "start": "vite preview",                                 // For Netlify or production preview
+    "dev": "PORT=5900 concurrently \"npm run start-backend\" \"vite\"",// Local development: backend + Vite
+    "build": "vite build",                                   // Build frontend assets
+    "start-backend": "PORT=5700 node backend/backend_code_api.js",     // Run backend server
+    "start": "PORT=3000 open index.html"                      // Unrelated (optional local opener)
   },
-"engines": {
-  "node": ">=18 <21"
-},
+  "engines": {
+    "node": ">=18 <21"
+  },
   "dependencies": {
     "body-parser": "^2.2.0",
     "cors": "^2.8.5",
@@ -21,7 +23,6 @@
   },
   "devDependencies": {
     "concurrently": "^9.1.2",
-      "open": "^10.1.2",
     "webpack-cli": "^5.0.0"
   }
 }
