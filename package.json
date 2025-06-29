@@ -4,10 +4,10 @@
   "description": "",
   "homepage": "index.html",
   "scripts": {
-    "start": "vite preview",                                 // For Netlify or production preview
-    "dev": "PORT=5900 concurrently \"npm run start-backend\" \"vite\"",// Local development: backend + Vite
-    "build": "vite build",                                   // Build frontend assets
-    "start-backend": "PORT=5700 node backend/backend_code_api.js",     // Run backend server                   // Unrelated (optional local opener)
+    "start": "vite preview",                                 
+    "dev": "PORT=5900 concurrently \"npm run start-backend\" \"vite\"",
+    "build": "vite build",                                  
+    "start-backend": "PORT=5700 node backend/backend_code_api.js"
   },
   "engines": {
     "node": ">=18 <21"
